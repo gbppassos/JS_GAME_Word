@@ -1,0 +1,97 @@
+<html lang="pt-br">
+  <head>
+    <title>Project Day 10</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+ 
+  </head>
+  <body>
+    <main class="" id="errou">
+     
+      <div class="title" id="title">
+        <audio src="./audio/correct-6033.mp3"></audio>
+        Palavras Embaralhadas
+        <br>
+        <span id="dificuldade"></span>
+      </div>
+      
+      <div class="score-geral" id="title">
+        <div class="colum">
+          <h2 class="heart">
+            <span class="material-symbols-outlined">
+              favorite
+            </span> 
+          </h2>
+          <p id="heart">5</p>
+        </div>
+        
+        <div class="colum">
+          <h2 class="purple">
+            <span class="material-symbols-outlined purple">
+              timer
+            </span> 
+          </h2>
+          <p class="purple" id="time">30</p>
+        </div>
+        
+        <div class="colum">
+          <h2 class="score-Icon">
+            <span class="material-symbols-outlined">
+              radio_button_unchecked
+            </span> 
+          </h2>
+          <p id="points">0</p>
+        </div>
+      </div>
+      
+      <div class="hr" id="hr">
+        ____________________________________
+      </div>
+      
+      <div class="scramble-word" id="scramble-word">
+        <p class="word" id="word">
+        </p>
+      </div>
+      
+      
+      
+      <input 
+      type="text"
+      class="input-text" id="input-text"
+      placeholder="Digite uma palavra"
+      required
+      value=""
+      />
+
+      <div class="btn" id="btn">
+        <button value="teste" class="refresh-btn" type="button" onClick="refresh()">
+          REINICIAR
+        </button>
+        <button class="submit-btn" id="submit-btn" type="button" onClick="check()">
+          CONFIRMAR
+        </button>
+      </div>
+     
+      <div class="hr" id="hr">
+        ____________________________________
+      </div>
+      
+      <div class="btn" id="btn">
+      <button value="teste" class="help-btn" id="helper_Button" type="button" onClick="help()">
+      Dicas: <p id="helpCont"> - </p>
+      </button>
+      <div class="helper" id="helper">
+      _
+      </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body {
+    background: #061960;  
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+  }
+
+main{
+    background-color: #00495fb7;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 225, 255);
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title{
+    font-size: 2rem;
+    align-self: center;
+    color: #fff;
+}
+
+.title span{
+    font-size: 1rem;
+}
+
+.facil{
+    color: rgba(148, 255, 134, 0.719);
+}
+
+.medium{
+    color: rgba(110, 197, 255, 0.719);
+}
+
+.dificil{
+    color: rgba(255, 113, 113, 0.719);
+}
+
+.score-geral{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.colum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.colum h2{
+    color: rgb(233, 227, 227);
+}
+
+.colum h2.heart span{
+    color: rgb(223, 4, 4);
+    font-size: 2rem;
+}
+
+.colum h2.score-Icon span{
+    color: rgb(19, 153, 243);
+    font-size: 2rem;
+}
+
+
+.colum h2.heart span.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.colum h2.score-Icon span.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 100,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
+.purple{
+    color: #ba6eff !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.colum p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hr{
+    opacity: 0.3;
+    transform: translateY(-15px);
+    color: #fff;
+}
+
+.scramble-word{
+    font-size: 2rem;
+    letter-spacing: 0.9rem;
+    height: 50px;
+    width: 90%;
+    transform: translateY(-20px) translateX(0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.word{
+    transform: translateX(5px);
+}
+
+.font-small{
+    letter-spacing: 0.2rem;
+}
+
+.time{
+    align-self: flex-start;
+    font-family: 'Gill Sans';
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    transform: translateY(-20px);
+}
+
+.input-text{
+    border: 0.5px solid rgba(153, 151, 151, 0.779);
+    outline: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 230px;
+    padding: 20px;
+    transform: translateY(-20px);
+    font-family: 'Trebuchet MS';
+}
+
+.btn{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.btn button{
+    height: 50px;
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+}
+
+.refresh-btn{
+    background-color: rgb(158, 155, 155);
+}
+
+.help-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(0, 107, 36);
+}
+
+.help-btn:hover{
+    background-color: rgb(31, 153, 0);
+}
+
+.help-btn p{    
+    padding-left: 5px;
+}
+
+.refresh-btn:hover{
+    background-color: rgb(165, 0, 0);
+}
+
+.refresh-btn{
+    background-color: #620000;
+}
+
+.submit-btn{
+    background-color: #000b9b;
+}
+
+.submit-btn:hover{
+    background-color: rgb(0, 14, 206);
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}
+
+.helper{
+    color: rgb(161, 253, 158);
+}
+
+.display-None{
+    display: none;
+}
+
+
+.errou{
+    animation: treme 0.1s;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+  }
+  
